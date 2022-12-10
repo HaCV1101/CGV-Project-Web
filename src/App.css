@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main {
+  background-color: #fdfcf0;
+}
+
+#header-container #header_btn {
+  margin: auto;
+  height: 29px;
+  width: 100%;
+  background-color: #fdfcf0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#header-container #header_btn .btn-cover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 2px 10px;
+}
+
+
+
+#header-container #header_btn a {
+  height: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  font-weight: 500;
+}
+
+#header-container #header_btn a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#header-container #header_btn .icon {
+  margin-right: 2px;
+}
+
+#header-container #bg-top {
+  display: flex;
+  width: 100%;
+  background: url(./img/bg-top.png) repeat-x scroll left bottom transparent;
+  background-size: 10px 135px;
+  height: 135px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#header-container #bg-top .top-container {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#header-container #bg-top .logo {
+  display: block;
+  float: left;
+  min-width: 100px;
+  min-height: 44px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#header-container #bg-top ul {
+  display: block;
+  float: left;
+  margin-left: -20px;
+  margin-right: 70px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+#header-container #bg-top li {
+  display: inline-block;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 5px 25px;
+}
+
+#header-container #bg-top a {
+  text-decoration: none;
+  color: black;
+}
+
+#header-container #bg-top #kenhCine {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+
+#header-container #bg-top #muaVe {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* #content-container {
+  width: 100%;
+  height: 1800px;
+} */
+
+#footer-container {
+  width: 100%;
+}
+
+#footer-container .footer-brand-slide {
+  width: 100%;
+  height: 55px;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  text-align: center;
+  overflow: hidden;
+}
+
+#footer-container .footer-brand-slide li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#footer-container .footer-brand-slide li :hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#footer-container .footer-cgv-policy {
+  width: 100%;
+  height: 186px;
+  border-bottom: 2px solid #222;
+}
+
+#footer-container .footer-cgv-address {
+  width: 100%;
+  height: 133px;
+}
+
+#footer-container .footer-brick {
+  width: 100%;
+  height: 114px;
+  background: url(./img/bg-bottom-footer.jpg) center;
+}
