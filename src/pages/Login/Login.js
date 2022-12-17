@@ -32,7 +32,10 @@ function Login() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        if (data.status === "success") {
+          alert("login success");
+          window.localStorage.setItem("token", JSON.stringify(data.data));
+        }
       });
   };
   return (
@@ -44,7 +47,7 @@ function Login() {
               className="card-header"
               style={{ display: "flex", textAlign: "center", padding: "5px" }}
             >
-              <h5 style={{ flex: 1, margin: "7px" }}>ĐĂNG NHẬP</h5>
+              <h5 style={{ flex: "1", margin: "7px" }}>ĐĂNG NHẬP</h5>
             </div>
             <div className="card-body">
               <form onSubmit={login}>
@@ -60,13 +63,13 @@ function Login() {
                     className="form-control"
                     id="email"
                     placeholder="Email hoặc số điện thoại"
+                    value={email}
                     onChange={setEmailA}
                   />
                 </div>
                 <div className="form-group">
                   <label htmlFor="password">
-                    {" "}
-                    <h6 style={{ margin: "12px 0 10px 0" }}>Mật khẩu</h6>{" "}
+                    <h6 style={{ margin: "12px 0 10px 0" }}>Mật khẩu</h6>
                   </label>
                   <input
                     style={{ fontSize: "11px" }}
@@ -74,19 +77,20 @@ function Login() {
                     className="form-control"
                     id="password"
                     placeholder="Mật khẩu"
+                    value={password}
                     onChange={setPasswordA}
                   />
                 </div>
                 <button
                   type="submit"
                   style={{
-                    "background-color": "red",
+                    backgroundColor: "red",
                     color: "#fff",
                     width: "100%",
                     border: "none",
-                    "border-radius": "5px",
+                    borderRadius: "5px",
                     padding: "10px",
-                    "margin-top": "20px",
+                    marginTop: "20px",
                   }}
                 >
                   ĐĂNG NHẬP
@@ -100,7 +104,7 @@ function Login() {
                 textAlign: "center",
               }}
             >
-              <p style={{ flex: 1, margin: "6px" }}>
+              <p style={{ flex: "1", margin: "6px" }}>
                 Bạn chưa có tài khoản? <Link to="/register">Đăng ký</Link>
               </p>
             </div>
