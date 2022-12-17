@@ -1,41 +1,113 @@
+import { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./login.css";
+
 function Login() {
+  //set state for email and password
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const setEmailA = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const setPasswordA = (e) => {
+    setPassword(e.target.value);
+  };
+
+  //login with fetch api
+  const login = (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    fetch("http://localhost:3001/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
   return (
-    <form id="content-container">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">
-          Email address
-        </label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
+    <div className="container">
+      <div className="row" style={{ display: "block" }}>
+        <div className="col-md-6 offset-md-3">
+          <div className="card">
+            <div
+              className="card-header"
+              style={{ display: "flex", textAlign: "center", padding: "5px" }}
+            >
+              <h5 style={{ flex: 1, margin: "7px" }}>ĐĂNG NHẬP</h5>
+            </div>
+            <div className="card-body">
+              <form onSubmit={login}>
+                <div className="form-group">
+                  <label htmlFor="email">
+                    <h6 style={{ margin: "12px 0 10px 0" }}>
+                      Email hoặc số điện thoại
+                    </h6>
+                  </label>
+                  <input
+                    style={{ fontSize: "11px" }}
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="Email hoặc số điện thoại"
+                    onChange={setEmailA}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="password">
+                    {" "}
+                    <h6 style={{ margin: "12px 0 10px 0" }}>Mật khẩu</h6>{" "}
+                  </label>
+                  <input
+                    style={{ fontSize: "11px" }}
+                    type="password"
+                    className="form-control"
+                    id="password"
+                    placeholder="Mật khẩu"
+                    onChange={setPasswordA}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  style={{
+                    "background-color": "red",
+                    color: "#fff",
+                    width: "100%",
+                    border: "none",
+                    "border-radius": "5px",
+                    padding: "10px",
+                    "margin-top": "20px",
+                  }}
+                >
+                  ĐĂNG NHẬP
+                </button>
+              </form>
+            </div>
+            <div
+              className="card-footer"
+              style={{
+                display: "flex",
+                textAlign: "center",
+              }}
+            >
+              <p style={{ flex: 1, margin: "6px" }}>
+                Bạn chưa có tài khoản? <Link to="/register">Đăng ký</Link>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">
-          Password
-        </label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">
-          Check me out
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary">
-        Submit
-      </button>
-    </form>
+    </div>
   );
 }
-
 export default Login;
