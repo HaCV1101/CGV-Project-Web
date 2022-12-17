@@ -1,17 +1,17 @@
 import { useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 
 function Login() {
   //set state for email and password
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const setEmailA = (e) => {
+  const setChangeEmail = (e) => {
     setEmail(e.target.value);
   };
 
-  const setPasswordA = (e) => {
+  const setChangePassword = (e) => {
     setPassword(e.target.value);
   };
 
@@ -35,9 +35,17 @@ function Login() {
         if (data.status === "success") {
           alert("login success");
           window.localStorage.setItem("token", JSON.stringify(data.data));
+          window.location.href = "/";
         }
       });
   };
+  const user = JSON.parse(localStorage.getItem("token"));
+  const navigate = useNavigate();
+  React.useEffect(() => {
+    if (user) {
+      navigate("/profile");
+    }
+  }, [user, navigate]);
   return (
     <div className="container">
       <div className="row" style={{ display: "block" }}>
@@ -64,7 +72,7 @@ function Login() {
                     id="email"
                     placeholder="Email hoặc số điện thoại"
                     value={email}
-                    onChange={setEmailA}
+                    onChange={setChangeEmail}
                   />
                 </div>
                 <div className="form-group">
@@ -78,7 +86,7 @@ function Login() {
                     id="password"
                     placeholder="Mật khẩu"
                     value={password}
-                    onChange={setPasswordA}
+                    onChange={setChangePassword}
                   />
                 </div>
                 <button

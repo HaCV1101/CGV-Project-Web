@@ -2,6 +2,11 @@ import "./header.css";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const user = JSON.parse(localStorage.getItem("token"));
+  const logoutOnclick = () => {
+    localStorage.removeItem("token");
+  };
+  console.log("log");
   return (
     <>
       <div id="header-container">
@@ -43,12 +48,20 @@ function Header() {
               src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/icon_login25.png"
               alt="icon"
             />
-            {/* <a id="btn-zoom" href="https://www.facebook.com/">
-              Đăng nhập/ Đăng ký
-            </a> */}
-            <Link to="/login" id="btn-zoom">
-              Đăng nhập/ Đăng ký
-            </Link>
+            {!user ? (
+              <Link to="/login">Dang nhap/Dang ky</Link>
+            ) : (
+              <>
+                <Link to="/profile">Xin chao, {user.user.name}</Link>
+                <Link
+                  to="/logout"
+                  onClick={logoutOnclick}
+                  style={{ marginLeft: "20px" }}
+                >
+                  Dang xuat
+                </Link>
+              </>
+            )}
           </div>
         </div>
         <div id="bg-top">
