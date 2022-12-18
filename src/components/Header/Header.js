@@ -1,10 +1,12 @@
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
   const user = JSON.parse(localStorage.getItem("token"));
+  const navigate = useNavigate();
   const logoutOnclick = () => {
     localStorage.removeItem("token");
+    navigate("/logout");
   };
   console.log("log");
   return (
