@@ -14,7 +14,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 export default function Home() {
   return (
-    <>
+    <div className=" main-container slideshow-container">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -30,7 +30,7 @@ export default function Home() {
         <SwiperSlide>
           <a href="https://www.cgv.vn/default/violent-night.html">
             <img
-              // style={{ width: "70%", height: "100%" }}
+              // style={{ width: "70%", height: "100%" }}?
               src="https://ocwckgy6c1obj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980_x_448__10.jpg"
               alt=""
             />
@@ -164,7 +164,11 @@ export default function Home() {
             id="uncontrolled-tab-example"
             className="mb-3 tabss"
           >
-            <Tab eventKey="home" title="Thanh vien CGV">
+            <Tab
+              eventKey="home"
+              title="Thanh vien CGV"
+              // style={{ display: "flex", textAlign: "center", flex: 1 }}
+            >
               <Swiper
                 slidesPerView={4}
                 spaceBetween={5}
@@ -264,6 +268,6 @@ export default function Home() {
           </Tabs>
         </div>
       </div>
-    </>
+    </div>
   );
 }

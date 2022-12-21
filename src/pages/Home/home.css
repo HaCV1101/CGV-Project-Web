@@ -1,11 +1,67 @@
-/* Phần thân */
-
-/* main-containet col1-layout */
-
-.main-container {
-    padding-top: 20px;
-
+#app {
+    height: 100%
 }
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 50%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: -400px; */
+}
+
+
+
+
+
+
+
+
 
 .cms-index-index,
 .main-container {
@@ -81,15 +137,16 @@ body .cms-home,
     position: relative;
     display: inline-block;
     width: 100%;
-    margin: 10px 0;
-    border: 1px solid #ededed;
+    margin: 50px 0;
+    /* border: 1px solid #ededed; */
 }
 
 .swiper-slide {
     position: relative;
-    height: 100vh;
+    height: 48.5vh;
     width: 100%;
     cursor: pointer;
+    /* border: 2px solid; */
 }
 
 .swiper-slide::before {
@@ -140,7 +197,7 @@ body .cms-home,
 .home-movie-selection {
     margin: 20px 0;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 
 
 }
