@@ -49,13 +49,12 @@ button {
     color: #ffff !important;
 }
 
-p {
+/* p {
     color: red;
-}
+} */
 
 .btn {
     background-color: red;
-
     width: 100%;
     border: none;
     padding: 10px;

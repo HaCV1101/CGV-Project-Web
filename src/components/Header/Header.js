@@ -8,7 +8,6 @@ function Header() {
     localStorage.removeItem("token");
     navigate("/logout");
   };
-  console.log("log");
   return (
     <>
       <div id="header-container">
@@ -51,7 +50,7 @@ function Header() {
               alt="icon"
             />
             {!user ? (
-              <Link to="/login">Dang nhap/Dang ky</Link>
+              <Link to="/login">Đăng nhập/Đăng ký</Link>
             ) : (
               <>
                 <Link to="/profile">Xin chao, {user.user.name}</Link>
@@ -60,7 +59,7 @@ function Header() {
                   onClick={logoutOnclick}
                   style={{ marginLeft: "20px" }}
                 >
-                  Dang xuat
+                  Đăng xuẩt
                 </Link>
               </>
             )}

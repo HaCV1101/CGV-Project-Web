@@ -13,11 +13,19 @@ function Register() {
 
   const submitForm = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/auth/singup", {
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      password: password,
+      confirmPassword: confirmPassword,
+    };
+    fetch("http://localhost:3001/auth/signup", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
+      body: JSON.stringify(data),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -26,9 +34,12 @@ function Register() {
           console.log(data);
           return;
         }
-        console.log(data);
+        console.log(JSON.stringify(data));
         alert("Dang ky thanh cong");
         window.location.href = "/login";
+      })
+      .catch((err) => {
+        console.log(err);
       });
   };
 

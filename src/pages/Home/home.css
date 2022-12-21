@@ -1,4 +1,413 @@
-#content-container {
-    width: 100%;
-    height: 1800px;
+/* Phần thân */
+
+/* main-containet col1-layout */
+
+.main-container {
+    padding-top: 20px;
+
 }
+
+.cms-index-index,
+.main-container {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg_c_bricks.png) repeat-x scroll 0 10px rgba(0, 0, 0, 0);
+
+}
+
+@media only screen and (min-width: 480px) {
+
+    .main-container,
+    .footer-container {
+        padding: 30px;
+    }
+}
+
+.main-container,
+.footer-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px !important;
+}
+
+@media only screen and (min-width: 771px) {
+    .main {
+        width: 980px;
+    }
+}
+
+.main {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.main::after,
+.col-wrapper::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col1-layout .col-main {
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+.col1-layout .col-main {
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+.col-main {
+    float: left;
+    width: 75%;
+}
+
+.col-left,
+.col-right,
+.col-main {
+    padding: 0 10px;
+}
+
+body .cms-home,
+.slideshow-container {
+    margin-top: 0px;
+}
+
+/* Phần slider 1 */
+
+.slideshow-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ededed;
+}
+
+.swiper-slide {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+.swiper-slide::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: var(--z-overlay);
+}
+
+.swiper-navBtn {
+    opacity: 0.5;
+    --swiper-theme-color: #ffff;
+    border-radius: 100%;
+    visibility: visible;
+}
+
+.swiper-navBtn:hover {
+    opacity: 1;
+}
+
+.swiper-pagination {
+    margin-bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    --white-color: #ffff;
+    --swiper-theme-color: red;
+    border: 1px solid var(--white-color);
+    --size: 15px;
+    font-size: var(--size);
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* hết phần slider 1 */
+
+/* Home movie */
+.home-movie-selection {
+    margin: 20px 0;
+    width: 100%;
+    height: 400px;
+
+
+}
+
+.home-title {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll 0 44px rgba(0, 0, 0, 0);
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.home-movie-selection .home-title h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif) no-repeat scroll center center / 406px 41px #FDFCF0;
+    display: inline-block;
+    width: 425px;
+}
+
+.home-title h2 {
+    height: 60px;
+    text-indent: -99999px;
+}
+
+@media only screen and (min-width: 771px) {
+    .home-title h2 {
+        height: 60px;
+        text-indent: -99999px;
+    }
+}
+
+.home-movie-selection .slideshow-containe-movier {
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+#slider2 a {
+    height: 100%;
+    width: 100%;
+}
+
+#slider2 img {
+    height: 350px;
+    object-fit: unset;
+
+}
+
+/* event */
+.cms-home .home-event {
+    background: transparent;
+    border-bottom: 3px solid #241d1e;
+    overflow: unset;
+    float: left;
+    padding-bottom: 30px;
+    margin: 20px 0px 0px;
+}
+
+.home-event {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 60px;
+    border-bottom: 3px solid #241d1e;
+
+}
+
+.product-collateral {
+    clear: both;
+}
+
+.product-view .product-shop,
+.product-img-box,
+.product-collateral,
+.product-view .block-related,
+.box-collateral {
+    margin-bottom: 10px;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.home-event .home-title h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/h3_event.gif) no-repeat scroll center center / 142px 41px #FDFCF0;
+    display: inline-block;
+    width: 18%;
+}
+
+.home-title h2 {
+    height: 60px;
+    text-indent: -99999px;
+}
+
+@media only screen and (min-width: 771px) {
+    .home-title h2 {
+        height: 60px;
+        text-indent: -99999px;
+    }
+}
+
+.home-event .toggle-tabs {
+    margin-top: 20px;
+    list-style: none outside none;
+}
+
+@media only screen and (min-width: 771px) {
+    .product-collateral .toggle-tabs {
+        background: transparent;
+        border: medium none;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 771px) {
+    .product-collateral .toggle-tabs {
+        display: block;
+        width: 100%;
+        position: relative;
+        background-color: #f4f4f4;
+    }
+}
+
+/* tab */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: none;
+
+    margin: 10px 238px;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 12px;
+    width: 250px;
+    line-height: 10px;
+
+}
+
+.tab .left {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/ribon_left_menu.gif) no-repeat scroll left 0 #e71a0f;
+    padding-left: 19px;
+    opacity: 0.8;
+}
+
+.tab .right {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/ribon_right.gif) no-repeat scroll right 0 #e71a0f;
+    padding-right: 19px;
+    opacity: 0.8;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    opacity: 0.5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #E71A0F;
+    color: #ffff;
+    opacity: 1;
+}
+
+.tabcontent {
+    margin-bottom: 40px;
+}
+
+/* end tab */
+
+
+/* home-promotion-card */
+.home-promotion-card {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    border-bottom: 3px solid #241d1e;
+
+}
+
+.promos {
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.promos:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.home-promotion-card .promos li.col-ad {
+    border: 3px solid #241d1e;
+    height: 261px;
+    padding: 3px;
+    width: 228px;
+    display: block !important;
+}
+
+.home-promotion-card .promos li:first-child {
+    margin-left: 0;
+}
+
+.home-promotion-card .promos li {
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 771px) {
+    body .promos>li {
+        float: left;
+        width: 31.74603%;
+        margin-right: 2.38095%;
+    }
+}
+
+body .promos>li {
+    margin: 0 0 10px 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    border: 1px solid #cccccc;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.format-border {
+    border: 1px solid #241d1e;
+}
+
+.promos img {
+    max-width: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.promos img:hover {
+    opacity: 0.8;
+}
+
+.home-promotion-card .promos li.col-hd {
+    border: 3px solid #241d1e;
+    height: 261px;
+    padding: 3px;
+    position: relative;
+    width: 510px;
+}
+
+@media only screen and (min-width: 771px) {
+    .promos>li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.promos>li:last-child {
+    margin-bottom: 0;
+}
+
+/* hết phần thân */
