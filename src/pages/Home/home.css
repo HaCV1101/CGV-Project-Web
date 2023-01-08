@@ -15,17 +15,23 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .swiper {
-    width: 50%;
+    margin-top: 10px;
+    width: 51.5%;
     height: 100%;
 }
 
-.swiper-slide {
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container.swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -43,25 +49,35 @@ body {
 }
 
 .swiper-slide img {
-    display: block;
+    border: 1px solid #fdfcf0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: -400px; */
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 20px;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
 }
 
 
+.swiper-pagination-bullet {
+    height: 14px;
+    width: 14px;
+    /* background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/sprite_icon.png?fbclid=IwAR3UeOxsdD4CcOmdozWVjTvkto5B0wbyAfnsF7pnPMuYcrKsMjf32A8zn5A) repeat-y; */
+}
 
-
-
-
-
-
+.swiper-pagination-bullet-active {
+    background-color: #E71A0F;
+    opacity: 0.7;
+}
 
 .cms-index-index,
 .main-container {
@@ -126,65 +142,155 @@ body {
     padding: 0 10px;
 }
 
-body .cms-home,
-.slideshow-container {
-    margin-top: 0px;
+.sect-person {
+    margin-top: 30px;
+    width: 51.5%;
+    margin-left: 461px;
+    padding-bottom: -5px !important;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    height: 108px;
+}
+
+
+.sect-person ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.sect-person ul {
+    padding-left: 19px;
+    border-bottom: 1px solid #000;
+}
+
+.sect-person ul li a {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-header-transparent-home.png);
+    display: block;
+    height: 90px;
+    text-indent: -9999px;
+    width: 136px;
+}
+
+.sect-person .threater {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.theater {
+        background-position: 10px 0;
+    }
+}
+
+.sect-person .now-sh {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.now-sh {
+        background-position: -140px 0;
+    }
+}
+
+.sect-person .special {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.special {
+        background-position: -280px 0;
+    }
+}
+
+.sect-person .event {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.event {
+        background-position: -420px 0;
+    }
+}
+
+.sect-person .requied-login {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.requied-login {
+        background-position: -560px 0;
+    }
+}
+
+.sect-person .dc {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.dc {
+        background-position: -700px 0;
+    }
+}
+
+/* .sect-person .login-header {
+    border-right: 1px solid #000;
+} */
+
+@media only screen and (min-width: 771px) {
+    .sect-person ul li a.login-header {
+        background-position: -840px 0;
+    }
 }
 
 /* Phần slider 1 */
 
-.slideshow-container {
+.main-container.slideshow-container {
     position: relative;
     display: inline-block;
     width: 100%;
-    margin: 50px 0;
-    /* border: 1px solid #ededed; */
+
 }
 
-.swiper-slide {
+.main-container.swiper-slide {
     position: relative;
-    height: 48.5vh;
+    height: 100vh;
     width: 100%;
     cursor: pointer;
-    /* border: 2px solid; */
 }
 
-.swiper-slide::before {
+.main-container.swiper-slide::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
 
     z-index: var(--z-overlay);
 }
 
-.swiper-navBtn {
+.main-container.swiper-navBtn {
     opacity: 0.5;
-    --swiper-theme-color: #ffff;
+    --swiper-theme-color: #ffff !important;
     border-radius: 100%;
     visibility: visible;
 }
 
-.swiper-navBtn:hover {
+.main-container.swiper-navBtn:hover {
     opacity: 1;
 }
 
-.swiper-pagination {
+.main-container.swiper-pagination {
     margin-bottom: 10px;
 }
 
-.swiper-pagination-bullet {
+.main-container.swiper-pagination-bullet {
     --white-color: #ffff;
     --swiper-theme-color: red;
     border: 1px solid var(--white-color);
     --size: 15px;
     font-size: var(--size);
-
 }
 
-.swiper-slide img {
+.main-container.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -195,19 +301,22 @@ body .cms-home,
 
 /* Home movie */
 .home-movie-selection {
-    margin: 20px 0;
+    margin: 30px 0;
     width: 100%;
     /* height: 400px; */
+}
 
-
+ul.mb-3.tabss.nav.nav-pills {
+    margin-left: 700px;
 }
 
 .home-title {
-    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll 0 44px rgba(0, 0, 0, 0);
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll 0 26px rgba(0, 0, 0, 0);
     height: 60px;
     text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
+    width: 980px;
+    /* margin-bottom: 20px; */
+    margin: 10px auto;
 
 }
 
@@ -220,6 +329,8 @@ body .cms-home,
 .home-title h2 {
     height: 60px;
     text-indent: -99999px;
+    font-size: 24px;
+    line-height: 28.8px;
 }
 
 @media only screen and (min-width: 771px) {
@@ -241,7 +352,7 @@ body .cms-home,
 }
 
 #slider2 img {
-    height: 350px;
+    height: 335px;
     object-fit: unset;
 
 }
@@ -259,8 +370,7 @@ body .cms-home,
 .home-event {
     width: 100%;
     min-height: 200px;
-    margin-top: 60px;
-    border-bottom: 3px solid #241d1e;
+    margin-top: 30px;
 
 }
 
@@ -283,7 +393,7 @@ body .cms-home,
 .home-event .home-title h2 {
     background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/h3_event.gif) no-repeat scroll center center / 142px 41px #FDFCF0;
     display: inline-block;
-    width: 18%;
+    width: 20%;
 }
 
 .home-title h2 {
@@ -322,16 +432,16 @@ body .cms-home,
 
 /* tab */
 /* Style the tab */
-.tab {
+/* .tabs {
     overflow: hidden;
     border: none;
 
     margin: 10px 238px;
-}
+} */
 
 
 /* Style the buttons inside the tab */
-.tab button {
+.tabs button {
     background-color: inherit;
     float: left;
     border: none;
@@ -342,29 +452,36 @@ body .cms-home,
     font-size: 12px;
     width: 250px;
     line-height: 10px;
-
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/ribon_left_menu.gif) no-repeat scroll left 0 #e71a0f;
 }
 
-.tab .left {
+.tabs .left {
+    width: 5%;
     background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/ribon_left_menu.gif) no-repeat scroll left 0 #e71a0f;
     padding-left: 19px;
     opacity: 0.8;
+    float: left;
+    display: inline;
 }
 
-.tab .right {
+.tabs .right {
     background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/ribon_right.gif) no-repeat scroll right 0 #e71a0f;
+    /* margin-left: -10%; */
     padding-right: 19px;
     opacity: 0.8;
+    width: 5%;
+    float: left;
+    display: inline;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabs button:hover {
     opacity: 0.5;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-    background-color: #E71A0F;
+.tabs button.active {
+    /* background-color: #E71A0F; */
     color: #ffff;
     opacity: 1;
 }
@@ -378,11 +495,13 @@ body .cms-home,
 
 /* home-promotion-card */
 .home-promotion-card {
+    margin-left: 24.3%;
     margin-top: 30px;
     float: left;
-    width: 100%;
+    border-top: 3px solid #241d1e;
     border-bottom: 3px solid #241d1e;
-
+    width: 980px;
+    margin-bottom: 30px;
 }
 
 .promos {
@@ -455,6 +574,7 @@ body .promos>li {
     padding: 3px;
     position: relative;
     width: 510px;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 771px) {
@@ -466,5 +586,7 @@ body .promos>li {
 .promos>li:last-child {
     margin-bottom: 0;
 }
+
+
 
 /* hết phần thân */

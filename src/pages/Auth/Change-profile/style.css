@@ -1,0 +1,237 @@
+.page-change {
+    margin-top: 20px;
+}
+
+.page-change ul,
+ol,
+.fields {
+    list-style: none;
+    float: left;
+    /* display: block; */
+}
+
+.customer-account .fieldset {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page-change input,
+select,
+table,
+textarea {
+    font-family: Verdana, Arial, sans-serif;
+    color: #222;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.page-change .edit-info-cgv-left {
+    float: left;
+    width: 50%;
+    margin-left: -25px;
+}
+
+.page-change .form-list li,
+.cgv-option-info li {
+    width: 50%;
+    /* margin-right: 2%; */
+}
+
+.page-change .edit-info-cgv-left li {
+    float: left;
+    width: 100% !important;
+}
+
+.page-change .form-list>li {
+    margin-bottom: 10px;
+}
+
+.page-change .required:after,
+span.required:after {
+    content: ' *';
+    color: #df280a;
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.page-change label.required em,
+span.required em {
+    display: none;
+}
+
+.page-change .input-box {
+    padding-top: 2px;
+}
+
+.page-change input[type=email],
+input[type=search],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text] {
+    width: 365px;
+    max-width: 100%;
+}
+
+.page-change input[type=email],
+input[type=search],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text] {
+    height: 30px;
+    padding: 0 8px;
+}
+
+.page-change .input-text {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid silver;
+    background: #FFFFFF;
+    font-size: 15px;
+}
+
+.page-change input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.page-change input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+.page-change .edit-info-cgv-right {
+    float: right;
+    width: 50%;
+}
+
+.page-change .form-list .field,
+.form-list .wide,
+.form-list .control {
+    margin-bottom: 10px;
+}
+
+.page-change .cgv-edit-account .form-list select,
+.cgv-edit-account .form-list .field-city {
+    width: 100%;
+}
+
+.page-change .form-list select {
+    margin-top: 4px;
+    width: 365px;
+}
+
+.page-change select {
+    font-size: 14px;
+}
+
+.page-change option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.page-change .edit-info-cgv-right li {
+    float: left;
+    width: 100% !important;
+}
+
+.page-change .check-field-change-pass.control {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.page-change .checkbox+label,
+.radio+label {
+    width: auto;
+    max-width: 85%;
+    padding: 0 0 0 8px;
+    font-size: 13px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.page-change input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.page-change .checkbox,
+.radio {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+}
+
+.d-block .left {
+    float: left;
+}
+
+.d-block .left {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.page-change .form-list .field,
+.form-list .wide,
+.form-list .control {
+    margin-bottom: 10px;
+}
+
+.d-block .right {
+    width: 48%;
+}
+
+.d-block .right {
+    margin-right: 0;
+    float: right;
+}
+
+.page-change .cgv-edit-btn.buttons-set button.button {
+    float: none;
+    border-radius: 5px;
+    background-color: #e71a0f;
+    margin-top: 24px;
+    margin-left: 44%;
+    width: 90px;
+}
+
+.page-change .buttons-set button.button {
+    float: right;
+}
+
+.page-change button {
+    background: #e71a0f;
+    display: inline-block;
+    padding: 6px 2px;
+    border: 0;
+    color: #FFFFFF;
+    /* font-size: 13px; */
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}

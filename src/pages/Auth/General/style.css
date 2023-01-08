@@ -1,0 +1,445 @@
+.format-profile-cgv {
+    color: #4a452a;
+    font-size: 12px;
+    margin-left: 0%;
+    margin-right: 31.5%;
+    margin-top: -25%;
+    width: 50%;
+    float: right;
+}
+
+.format-profile-cgv .title-page {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    background: #222;
+    height: 34px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.title-page h1 {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 34px;
+    text-align: center !important;
+    font-size: 22px;
+}
+
+.page-profile {
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+.my-profile-cgv {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-profile-cgv {
+    float: left;
+    width: 49%;
+}
+
+.insert-image-profile-cgv {
+    float: left;
+    width: 100%;
+}
+
+#fileToUpload {
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    font-size: 13px;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 600;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#fileToUpload>img {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #676565;
+    border-radius: 80px;
+    height: 120px;
+    width: 120px;
+}
+
+.button-change-image-profile {
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    width: 120px;
+}
+
+.image-profile-cgv .button-change-image-profile button {
+    background: #9d9b9b !important;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 8px;
+}
+
+.barcode-my-cgv {
+    float: right;
+    min-width: 30%;
+}
+
+.show-barcode-my-cgv,
+.cgv-cgviancard-number {
+    text-align: center;
+    font-size: 13px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.show-barcode-my-cgv,
+.cgv-cgviancard-number {
+    text-align: center;
+    font-size: 13px;
+}
+
+.show-barcode-my-cgv img {
+    display: inline-block;
+}
+
+.box-content,
+.welcome-msg {
+    font-size: 13px;
+}
+
+.welcome-msg {
+    color: #7f7f7f;
+}
+
+.welcome-msg .hello {
+    color: #000 !important;
+}
+
+.welcome-msg p {
+    color: #7f7f7f;
+}
+
+
+
+
+@media only screen and (max-width: 770px) {
+    .page-profile .welcome-msg .hello {
+        font-style: italic;
+    }
+
+    .welcome-msg .hello {
+        color: #000;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .page-profile.welcome-msg {
+        font-family: Verdana, Arial, sans-serif;
+    }
+}
+
+
+.box-account {
+    margin-bottom: 45px;
+}
+
+.cgv-info {
+    float: left;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-info {
+        float: left;
+        width: 100%;
+        border: 1px solid #222;
+        border-radius: 15px;
+        padding: 15px 0px;
+        margin-top: 20px;
+    }
+}
+
+.cgv-info>div {
+    float: left;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-info>div {
+        float: left;
+    }
+}
+
+.cgv-status-member {
+    width: 32%;
+    padding-right: 1%;
+    margin-left: 10px;
+}
+
+.cgv-tier {
+    float: left;
+    width: 100%;
+}
+
+.cgv-tier img {
+    height: 20px;
+    margin-left: 5px;
+}
+
+.cgv-info .cgv-status-member label {
+    width: 42%;
+    font-weight: normal;
+}
+
+.cgv-tier label {
+    float: left;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-info label {
+        font-size: 12px;
+    }
+}
+
+.member-icon {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/level-cgv-member.png) no-repeat;
+    width: 36px;
+    height: 32px;
+    float: left;
+    background-position: -102px 3px;
+    margin: -11px 0px 0px 0;
+}
+
+.total-spending {
+    margin-bottom: 4px;
+}
+
+.cgv-point {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.cgv-info .cgv-status-member label {
+    width: 42%;
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-info label {
+        font-size: 12px;
+    }
+}
+
+.cgv-status-member .format-acc-point .acc-show-point {
+    float: none;
+    font-weight: 600;
+    color: #595959;
+}
+
+.acc-show-point {
+    float: right;
+}
+
+@media only screen and (min-width: 771px) {
+    .acc-show-point {
+        float: right;
+    }
+}
+
+.cgv-point {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.cgv-info .cgv-info-detail {
+    text-align: center;
+}
+
+.cgv-info-detail {
+    float: left;
+    width: 18.3%;
+    padding: 0px 1% 2px;
+    border-left: 1px solid #222;
+}
+
+.cgv-info-detail label {
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-info label {
+        font-size: 12px;
+    }
+}
+
+.format-acc {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.format-acc {
+    font-weight: 600;
+}
+
+.format-acc a {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+a .icon-acc-add {
+    color: #222;
+}
+
+.icon-acc-add {
+    background: #2f95ec;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 20px;
+    color: #fff !important;
+    font-size: 12px;
+}
+
+.cgv-info-detail.cgv-coupons {
+    width: 14%;
+}
+
+.format-acc span.acc-show-point {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #595959;
+}
+
+@media only screen and (min-width: 771px) {
+    .cgv-point-last {
+        border-right: none;
+    }
+}
+
+.page-profile .box-head {
+    margin-top: 30px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 7px;
+}
+
+.page-profile .box-head h2 {
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 771px) {
+    .box {
+        margin-bottom: 10px;
+        float: left;
+        width: 100%;
+    }
+}
+
+.box-account .box-title {
+    padding-top: 15px;
+}
+
+.box-title h3 {
+    display: inline-block;
+}
+
+.title-my-cgv {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    padding-right: 5%;
+}
+
+.box-account .box .box-title a {
+    float: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.box a {
+    background: #9d9b9b;
+    color: #fff;
+    display: inline;
+    float: right;
+    min-width: 85px;
+    padding: 3px 5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 771px) {
+    .box a {
+        background: #9d9b9b;
+        color: #fff;
+        display: inline;
+        float: right;
+        width: 70px;
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 0px;
+
+    }
+}
+
+.box-content {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #7f7f7f;
+}
+
+.col2-set {
+    width: 100%;
+}
+
+.box-content.box-content-my-cgv span {
+    float: left;
+    width: 100%;
+    display: inline;
+    margin-bottom: 7px;
+}
+
+.page-profile a:hover {
+    opacity: 0.8;
+    color: #000;
+}
+
+.page-profile a {
+    text-decoration: none;
+}
+
+.change-my-cgv {
+    cursor: pointer;
+    background-color: #9D9B9B;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -49,12 +49,13 @@
 }
 
 #header-container #bg-top {
-    display: flex;
+    display: block;
     width: 100%;
     background: url(../../img/bg-top.png) repeat-x scroll left bottom transparent;
     background-size: 10px 135px;
     height: 135px;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -68,40 +69,69 @@
 #header-container #bg-top .logo {
     display: block;
     float: left;
-    min-width: 100px;
+    min-width: 50px;
     min-height: 44px;
-    margin: 0 auto;
+    margin: 25px 0px 40px 470px;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    box-sizing: border-box;
 }
 
-#header-container #bg-top ul {
+
+#header-container #bg-top .menu {
     display: block;
     float: left;
-    margin-left: -20px;
-    margin-right: 70px;
-    margin-top: 75px;
+    margin-left: -15px;
+    margin-top: 40px;
     overflow: hidden;
-}
-
-#header-container #bg-top li {
-    display: inline-block;
     font-weight: 800;
     text-transform: uppercase;
-    padding: 5px 25px;
+    list-style-type: none;
+    min-width: 130px;
+    padding: 20px;
+    /* position: absolute; */
 }
 
-#header-container #bg-top a {
+#header-container #bg-top .menu .subMenu {
+    list-style-type: none;
+    text-transform: none;
+    display: none;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png?fbclid=IwAR1l3sfppIH0yqnvZvIsMCyd-bbzL5yD1WKVRqzqR2WxQ9_DBt7Qz_mGbQ0);
+    margin-top: 5px;
+    padding: 15px 40px 15px 15px;
+    position: absolute;
+    border: 3px solid #828282;
+    opacity: 1;
+}
+
+#header-container #bg-top .menu .subMenu a:hover {
+    color: #E71A0F;
+}
+
+#header-container #bg-top .menu:hover .subMenu {
+    display: block;
+}
+
+#header-container #bg-top .menu .subMenu>li {
+    display: block !important;
+    text-transform: none;
+    text-align: left;
+}
+
+#header-container #bg-top .menu .subMenu a {
+    text-decoration: none;
+    color: #fdfcf0;
+}
+
+/* #header-container #bg-top a {
     text-decoration: none;
     color: black;
-}
+} */
 
 #header-container #bg-top #kenhCine {
     display: block;
     float: left;
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 10px;
 }
@@ -110,6 +140,5 @@
     display: block;
     float: left;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
 }

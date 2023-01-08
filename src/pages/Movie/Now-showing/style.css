@@ -1,0 +1,438 @@
+@media only screen and (min-width: 771px) {
+    .page-phim {
+        width: 980px;
+    }
+}
+
+.page-phim {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 770px) {
+    .category-title {
+        border-bottom: 3px solid #241d1e;
+        margin-bottom: 35px;
+        position: relative;
+    }
+}
+
+.page-title {
+    margin-top: 30px;
+}
+
+.category-title h1 {
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 770px) {
+    .category-products {
+        float: left;
+        width: 100%;
+    }
+}
+
+.cgv-movies .nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #6c757d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+
+
+.flex-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    justify-content: left;
+    margin: auto auto;
+    text-align: center;
+    justify-content: space-between;
+
+} */
+
+@media only screen and (min-width: 770px) {
+    .products-grid {
+        float: left;
+        width: 100%;
+        border-bottom: 3px solid #241d1e;
+        margin-bottom: 40px;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.products-grid {
+    position: relative;
+    /* justify-content: space-between; */
+    /* padding-left: -20px; */
+}
+
+.cgv-movies .products-grid>li {
+    text-align: left;
+}
+
+.item {
+    margin-top: 10px;
+    margin-right: 48px;
+    width: 20%;
+    /* box-shadow: 5px 5px 4px gray; */
+    text-align: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.film-lists .nmovie-rating.nmovie-rating-c13 {
+    background-position: -50px -2px;
+}
+
+.film-lists .nmovie-rating {
+    position: absolute;
+    z-index: 20;
+    width: 45px;
+    height: 30px;
+    top: 15px;
+    left: 15px;
+    font-size: 0px;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-movie-rating.png) no-repeat scroll top left transparent;
+    /* border: 1px solid #fff; */
+}
+
+.product-images {
+    position: relative;
+}
+
+.products-grid--max-4-col.products-grid .product-image {
+    max-width: 100%;
+    height: 260px;
+}
+
+.category-products .products-grid .product-image {
+    border: 6px solid #000000;
+    display: inline-table;
+    font-size: 20px;
+}
+
+.products-grid .product-image {
+    margin-bottom: 5px;
+}
+
+.products-grid .product-image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-image,
+.no-touch .product-img-box .product-image:not(.zoom-available):hover {
+    position: relative;
+    display: block;
+}
+
+.products-grid--max-4-col.products-grid .product-image img {
+    height: 260px;
+    width: 185px;
+}
+
+.products-grid .product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.products-grid .product-image:before {
+    background-color: white;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.products-grid .product-image:before,
+.products-grid .product-image:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.page-phim img {
+    display: block;
+}
+
+.page-phim a {
+    text-decoration: none;
+    --bs-link-color: #000;
+    color: var(--bs-link-color);
+
+}
+
+.category-products .products-grid li .product-info {
+    width: 100%;
+}
+
+.products-grid .product-info {
+    position: relative;
+    padding-bottom: 95px;
+}
+
+.products-grid .product-name,
+.products-list .product-name {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.category-products .products-grid .product-name a {
+    color: #333 !important;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.products-grid .product-name a,
+.products-list .product-name a {
+    font-weight: 500;
+}
+
+h2.product-name a,
+h3.product-name a,
+h4.product-name a,
+h5.product-name a,
+p.product-name a {
+    color: #636363;
+}
+
+.cgv-info-bold {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.cgv-info-normal {
+    font-size: 14px;
+}
+
+.film-lists ul.add-to-links {
+    float: left;
+    width: 100%;
+}
+
+.products-grid .add-to-links {
+    margin-bottom: 0;
+}
+
+.add-to-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    /* margin-top: 14px; */
+
+
+}
+
+.film-lists ul.add-to-links li:first-child {
+    flex: 1;
+}
+
+.film-lists ul.add-to-links li:last-child {
+    flex: 1;
+
+}
+
+.page-phim .btn-booking,
+.btn-booking:hover,
+.btn-booking:active,
+.btn-booking:focus {
+    background: none no-repeat scroll 0 0 #e71a0f;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.page-phim .btn-like,
+.btn-like:hover,
+.btn-like:active,
+.btn-like:focus {
+    background: none no-repeat scroll 0 0 #0f77e7;
+    border-radius: 5px;
+
+}
+
+.page-phim .button {
+    display: inline-block;
+    padding: 8px 10px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.film-lists .nmovie-rating.nmovie-rating-p {
+    background-position: -3px -2px;
+}
+
+.btn .btn-like {
+    background-color: #0f77e7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.toggle-tabs {
+    list-style-type: none;
+    list-style: none;
+
+}
+
+li.tong {
+    float: left;
+    margin: 2px;
+}
+
+li.current .day {
+    outline: 2.5px solid #222;
+}
+
+.day {
+    color: #717171;
+    cursor: pointer;
+    height: 48px;
+    position: relative;
+    width: 77px;
+    border: 2px solid #fdfcf0;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.day span {
+    color: #717171;
+    font-size: 11px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+}
+
+.day em {
+    color: #717171;
+    font-size: 11px;
+    font-style: normal;
+    left: 4px;
+    position: absolute;
+    top: 20px;
+}
+
+
+.day strong {
+    color: #717171;
+    font-size: 32px;
+    font-weight: normal;
+    left: 31px;
+    line-height: 32px;
+    position: absolute;
+    top: 8px;
+}
+
+
+
+.toggle-tabs-city {
+    display: block;
+    list-style: none;
+}
+
+.current-city {
+    background-color: #222;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.current-city span {
+    color: #fff !important;
+    padding: 5px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.city span {
+    color: #717171;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.city {
+    float: left;
+    cursor: pointer;
+}
+
+
+.toggle-tabs-type {
+    display: block;
+    list-style: none;
+}
+
+.current-type {
+    background-color: #222;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.current-type span {
+    color: #fff !important;
+    padding: 5px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.type span {
+    color: #717171;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.type {
+    float: left;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.type-watch {
+    display: block;
+    border-top: 2px solid;
+}

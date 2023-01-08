@@ -1,0 +1,326 @@
+@media only screen and (min-width: 771px) {
+    .page-chitiet {
+        width: 980px;
+    }
+}
+
+.page-chitiet {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.page-chitiet {
+    padding: 0;
+    float: none;
+}
+
+@media only screen and (max-width: 770px) {
+    .page-chitiet .product-view {
+        padding: 0px 20px;
+    }
+}
+
+.page-title {
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+    .page-chitiet .page-title.product-view {
+        margin-top: -10px;
+    }
+}
+
+.page-chitiet .page-title {
+    margin-top: 30px;
+}
+
+.page-chitiet .h1,
+h1 {
+    margin: 0;
+    color: #222;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 1.2;
+    margin-bottom: 0.7em;
+    text-rendering: optimizeLegibility;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-name-reponsive {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-view .product-img-box {
+        width: 20%;
+    }
+}
+
+.page-chitiet .product-view .product-shop,
+.product-img-box,
+.product-collateral,
+.product-view .block-related,
+.box-collateral {
+    margin-bottom: 10px;
+}
+
+.page-chitiet .product-img-box {
+    padding-right: 15px;
+}
+
+.page-chitiet .product-img-box {
+    float: left;
+}
+
+.page-chitiet .product-img-box .product-image {
+    margin-bottom: 10px;
+}
+
+.page-chitiet .product-image,
+.no-touch .product-img-box .product-image:not(.zoom-available):hover {
+    position: relative;
+    display: block;
+}
+
+.page-chitiet .product-image-gallery {
+    position: relative;
+}
+
+.page-chitiet .product-image-gallery .gallery-image.visible {
+    display: block;
+}
+
+.page-chitiet .product-img-box .product-image img {
+    max-width: 100%;
+    max-height: 750px;
+    margin: 0px auto;
+}
+
+.page-chitiet .product-image-gallery .gallery-image {
+    display: none;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-view .product-shop {
+        width: 80%;
+    }
+}
+
+.page-chitiet .product-view .product-shop,
+.product-view .add-to-cart-wrapper,
+.product-view .block-related {
+    padding-left: 15px;
+}
+
+.page-chitiet .product-view .product-shop {
+    float: right;
+}
+
+.page-chitiet .product-view .product-shop .product-name {
+    display: none;
+    float: left;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-view .product-shop .product-name {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-shop .product-name {
+        border-bottom: 1px solid #d9d6c8;
+        float: left;
+        margin-bottom: 10px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-shop>div {
+        float: left;
+        width: 100%;
+    }
+}
+
+.page-chitiet .product-view .product-shop .product-name .h1 {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.page-chitiet .product-view .product-shop .product-name .h1,
+.product-view .product-img-box .product-name h1 {
+    margin-bottom: 10px;
+    border: 0;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-name span.h1 {
+        color: #1a1919;
+        font-weight: normal;
+        line-height: 18px;
+    }
+}
+
+.page-chitiet .page-title h1,
+.page-title h2,
+.product-name h1,
+.product-name .h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .product-shop>div label {
+        float: left;
+    }
+}
+
+.page-chitiet label {
+    display: inline-block;
+    font-size: 13px;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 600;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (min-width: 771px) {
+    .page-chitiet .movie-rated-web .std {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.page-chitiet .movie-detail-fb-booking {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.page-chitiet .movie-detail-fb-booking .add-to-cart-wrapper {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-top: 14px;
+
+}
+
+.page-chitiet .btn-booking,
+.btn-booking:hover,
+.btn-booking:active,
+.btn-booking:focus {
+    background: none no-repeat scroll 0 0 #e71a0f;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.page-chitiet .btn-like,
+.btn-like:hover,
+.btn-like:active,
+.btn-like:focus {
+    background: none no-repeat scroll 0 0 #0f77e7;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.page-chitiet .button {
+    display: inline-block;
+    padding: 8px 10px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.page-chitiet .product-collateral {
+    clear: both;
+}
+
+.page-chitiet .product-collateral {
+    clear: both;
+
+}
+
+.page-chitiet .bloc-tabs {
+    display: flex;
+    width: 100;
+    margin-left: 36%;
+    margin-right: 36%;
+}
+
+.page-chitiet .tabs {
+
+    padding: 8px 20px;
+    text-align: center;
+    /* width: 50%; */
+    background: #e71a0f;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    color: #fff;
+    border: none;
+
+}
+
+
+.page-chitiet .active-tabs {
+    background: #e71a0f;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.page-chitiet .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    padding: 8px 32px;
+}
+
+
+
+.page-chitiet .content-tabs {
+    flex-grow: 1;
+    border: none;
+}
+
+.page-chitiet .content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.page-chitiet .content p {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    ;
+}
+
+.page-chitiet .active-content {
+    display: block;
+}
