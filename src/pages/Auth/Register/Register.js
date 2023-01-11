@@ -20,7 +20,7 @@ function Register() {
       password: password,
       confirmPassword: confirmPassword,
     };
-    fetch("http://localhost:3001/auth/signup", {
+    fetch("https://cgv-backend.onrender.com/auth/signup", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

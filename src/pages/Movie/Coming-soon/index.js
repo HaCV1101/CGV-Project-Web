@@ -32,7 +32,7 @@ function MovieComingSoon() {
   //fetch api to get data
   const [movie, setMovie] = React.useState([]);
   React.useEffect(() => {
-    fetch("http://localhost:3001/movie/coming-soon")
+    fetch("https://cgv-backend.onrender.com/movie/coming-soon")
       .then((res) => res.json())
       .then((data) => {
         setMovie(data.data.moviesComingSoon);

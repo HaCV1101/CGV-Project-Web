@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    fetch("http://localhost:3001/auth/login", {
+    fetch("https://cgv-backend.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

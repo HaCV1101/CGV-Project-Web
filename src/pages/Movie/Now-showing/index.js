@@ -33,7 +33,7 @@ function MovieNowShowing() {
   //fetch api to get data
   const [movie, setMovie] = React.useState([]);
   React.useEffect(() => {
-    fetch("http://localhost:3001/movie/now-showing")
+    fetch("https://cgv-backend.onrender.com/movie/now-showing")
       .then((res) => res.json())
       .then((data) => {
         setMovie(data.data.moviesNowShowing);
